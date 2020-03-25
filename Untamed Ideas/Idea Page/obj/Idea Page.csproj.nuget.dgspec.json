@@ -1,0 +1,227 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Brady\\Desktop\\Staging Project\\Untamed_Ideas_Staging\\Untamed Ideas\\Idea Page\\Idea Page.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Brady\\Desktop\\Staging Project\\Untamed_Ideas_Staging\\Untamed Ideas\\Data\\Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Brady\\Desktop\\Staging Project\\Untamed_Ideas_Staging\\Untamed Ideas\\Data\\Data.csproj",
+        "projectName": "Data",
+        "projectPath": "C:\\Users\\Brady\\Desktop\\Staging Project\\Untamed_Ideas_Staging\\Untamed Ideas\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\Brady\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Brady\\Desktop\\Staging Project\\Untamed_Ideas_Staging\\Untamed Ideas\\Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Brady\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Brady\\Desktop\\Staging Project\\Untamed_Ideas_Staging\\Untamed Ideas\\RepoLibrary\\RepoLibrary.csproj": {
+                "projectPath": "C:\\Users\\Brady\\Desktop\\Staging Project\\Untamed_Ideas_Staging\\Untamed Ideas\\RepoLibrary\\RepoLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Brady\\Desktop\\Staging Project\\Untamed_Ideas_Staging\\Untamed Ideas\\Idea Page\\Idea Page.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Brady\\Desktop\\Staging Project\\Untamed_Ideas_Staging\\Untamed Ideas\\Idea Page\\Idea Page.csproj",
+        "projectName": "Idea Page",
+        "projectPath": "C:\\Users\\Brady\\Desktop\\Staging Project\\Untamed_Ideas_Staging\\Untamed Ideas\\Idea Page\\Idea Page.csproj",
+        "packagesPath": "C:\\Users\\Brady\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Brady\\Desktop\\Staging Project\\Untamed_Ideas_Staging\\Untamed Ideas\\Idea Page\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Brady\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Brady\\Desktop\\Staging Project\\Untamed_Ideas_Staging\\Untamed Ideas\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\Brady\\Desktop\\Staging Project\\Untamed_Ideas_Staging\\Untamed Ideas\\Data\\Data.csproj"
+              },
+              "C:\\Users\\Brady\\Desktop\\Staging Project\\Untamed_Ideas_Staging\\Untamed Ideas\\RepoLibrary\\RepoLibrary.csproj": {
+                "projectPath": "C:\\Users\\Brady\\Desktop\\Staging Project\\Untamed_Ideas_Staging\\Untamed Ideas\\RepoLibrary\\RepoLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Brady\\Desktop\\Staging Project\\Untamed_Ideas_Staging\\Untamed Ideas\\RepoLibrary\\RepoLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Brady\\Desktop\\Staging Project\\Untamed_Ideas_Staging\\Untamed Ideas\\RepoLibrary\\RepoLibrary.csproj",
+        "projectName": "RepoLibrary",
+        "projectPath": "C:\\Users\\Brady\\Desktop\\Staging Project\\Untamed_Ideas_Staging\\Untamed Ideas\\RepoLibrary\\RepoLibrary.csproj",
+        "packagesPath": "C:\\Users\\Brady\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Brady\\Desktop\\Staging Project\\Untamed_Ideas_Staging\\Untamed Ideas\\RepoLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Brady\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
