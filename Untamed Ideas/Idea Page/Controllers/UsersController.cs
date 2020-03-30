@@ -24,16 +24,22 @@ namespace Idea_Page.Controllers
             return _repository.GetMethod();
         }
 
+        //Data.Models.Users
         [HttpGet("{username}",Name = "GetOneUser")]
-        public Data.Models.Users GetOneUser(string username)
+        public ActionResult GetOneUser(string username)
         {
-            return _repository.GetSpecificMethod(username);
+            var certainClient = _repository.GetSpecificMethod(username);
+            if (certainClient != null)
+                return Ok(certainClient);
+            else
+                return NotFound();
         }
 
         [HttpPost]
         public ActionResult PostUser([FromBody, Bind("Username","Password")]Data.Models.Users user)
         {
             _repository.PostMethod(user);
+ //           return CreatedAtRoute("GetOneUser", new { Name = user.Username }, user);
             return NoContent();// CreatedAtRoute("GetOneUser", user.Username);
         }
 

@@ -249,10 +249,12 @@ C:\Users\Brady\Desktop\Staging Project\Untamed_Ideas_Staging\Untamed Ideas\Idea 
 C:\Users\Brady\Desktop\Staging Project\Untamed_Ideas_Staging\Untamed Ideas\Idea Page\obj\Debug\netcoreapp3.1\Idea Page.csprojAssemblyReference.cache
 C:\Users\Brady\Desktop\Staging Project\Untamed_Ideas_Staging\Untamed Ideas\Idea Page\obj\Debug\netcoreapp3.1\staticwebassets\Idea Page.StaticWebAssets.Manifest.cache
 C:\Users\Brady\Desktop\Staging Project\Untamed_Ideas_Staging\Untamed Ideas\Idea Page\obj\Debug\netcoreapp3.1\staticwebassets\Idea Page.StaticWebAssets.xml
-C:\Users\Brady\Desktop\Staging Project\Untamed_Ideas_Staging\Untamed Ideas\Idea Page\obj\Debug\netcoreapp3.1\Idea Page.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Brady\Desktop\Staging Project\Untamed_Ideas_Staging\Untamed Ideas\Idea Page\obj\Debug\netcoreapp3.1\Idea Page.AssemblyInfoInputs.cache
 C:\Users\Brady\Desktop\Staging Project\Untamed_Ideas_Staging\Untamed Ideas\Idea Page\obj\Debug\netcoreapp3.1\Idea Page.AssemblyInfo.cs
 C:\Users\Brady\Desktop\Staging Project\Untamed_Ideas_Staging\Untamed Ideas\Idea Page\obj\Debug\netcoreapp3.1\Idea Page.RazorTargetAssemblyInfo.cache
 C:\Users\Brady\Desktop\Staging Project\Untamed_Ideas_Staging\Untamed Ideas\Idea Page\obj\Debug\netcoreapp3.1\Idea Page.csproj.CopyComplete
 C:\Users\Brady\Desktop\Staging Project\Untamed_Ideas_Staging\Untamed Ideas\Idea Page\obj\Debug\netcoreapp3.1\Idea Page.dll
 C:\Users\Brady\Desktop\Staging Project\Untamed_Ideas_Staging\Untamed Ideas\Idea Page\obj\Debug\netcoreapp3.1\Idea Page.pdb
+C:\Users\Brady\Desktop\Staging Project\Untamed_Ideas_Staging\Untamed Ideas\Idea Page\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Brady\Desktop\Staging Project\Untamed_Ideas_Staging\Untamed Ideas\Idea Page\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Brady\Desktop\Staging Project\Untamed_Ideas_Staging\Untamed Ideas\Idea Page\obj\Debug\netcoreapp3.1\Idea Page.MvcApplicationPartsAssemblyInfo.cache

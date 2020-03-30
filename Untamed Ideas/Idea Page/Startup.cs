@@ -21,6 +21,8 @@ namespace Idea_Page
             Configuration = configuration;
         }
 
+        readonly string AllMyOrigins = "_allMyOrigins";
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -31,7 +33,14 @@ namespace Idea_Page
             services.AddTransient<IRepository<Data.Models.Descriptions>, Data.Repositories.DescriptionsRepository>();
             services.AddTransient<IRepository<Data.Models.Images>, Data.Repositories.ImagesRepository>();
             services.AddTransient<IRepository<Data.Models.Supplies>, Data.Repositories.SuppliesRepository>();
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy(AllMyOrigins, b => b.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            });
+
             services.AddControllers();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,6 +50,8 @@ namespace Idea_Page
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(AllMyOrigins);
 
             app.UseHttpsRedirection();
 
