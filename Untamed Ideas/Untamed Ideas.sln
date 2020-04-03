@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Idea Page", "Idea Page\Idea Page.csproj", "{ACC08FCF-3A3F-438A-A3C8-DF4610C2308E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{E72EE45D-E3A7-407C-B03D-6BB438169E4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepoLibrary", "RepoLibrary\RepoLibrary.csproj", "{E78F0A07-01FF-4FAE-BC61-8909846E3126}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACC08FCF-3A3F-438A-A3C8-DF4610C2308E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACC08FCF-3A3F-438A-A3C8-DF4610C2308E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACC08FCF-3A3F-438A-A3C8-DF4610C2308E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACC08FCF-3A3F-438A-A3C8-DF4610C2308E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E72EE45D-E3A7-407C-B03D-6BB438169E4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E72EE45D-E3A7-407C-B03D-6BB438169E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E72EE45D-E3A7-407C-B03D-6BB438169E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E72EE45D-E3A7-407C-B03D-6BB438169E4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E78F0A07-01FF-4FAE-BC61-8909846E3126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E78F0A07-01FF-4FAE-BC61-8909846E3126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E78F0A07-01FF-4FAE-BC61-8909846E3126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E78F0A07-01FF-4FAE-BC61-8909846E3126}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC7459FD-26E8-42F2-AC41-3A40DEDA9246}
+	EndGlobalSection
+EndGlobal
