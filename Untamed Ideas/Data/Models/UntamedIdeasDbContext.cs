@@ -1,8 +1,9 @@
 ﻿using System;
+using Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace Data.Models
+namespace Data
 {
     public partial class UntamedIdeasDbContext : DbContext
     {
@@ -18,6 +19,7 @@ namespace Data.Models
         public virtual DbSet<Descriptions> Descriptions { get; set; }
         public virtual DbSet<Ideas> Ideas { get; set; }
         public virtual DbSet<Images> Images { get; set; }
+        public virtual DbSet<Picture> Picture { get; set; }
         public virtual DbSet<Supplies> Supplies { get; set; }
         public virtual DbSet<Users> Users { get; set; }
 
@@ -78,12 +80,34 @@ namespace Data.Models
                     .HasColumnName("ID")
                     .ValueGeneratedNever();
 
+                entity.Property(e => e.Paid).HasColumnName("paid");
+
                 entity.Property(e => e.Representation).HasColumnName("representation");
 
                 entity.HasOne(d => d.IdeaNavigation)
                     .WithMany(p => p.Images)
                     .HasForeignKey(d => d.Idea)
                     .HasConstraintName("FK__Images__Idea__5535A963");
+            });
+
+            modelBuilder.Entity<Picture>(entity =>
+            {
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .ValueGeneratedNever();
+
+                entity.Property(e => e.Content1)
+                    .HasMaxLength(255)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Content2)
+                    .HasMaxLength(255)
+                    .IsUnicode(false);
+
+                entity.HasOne(d => d.IdeaNavigation)
+                    .WithMany(p => p.Picture)
+                    .HasForeignKey(d => d.Idea)
+                    .HasConstraintName("FK__Picture__Idea__5CD6CB2B");
             });
 
             modelBuilder.Entity<Supplies>(entity =>

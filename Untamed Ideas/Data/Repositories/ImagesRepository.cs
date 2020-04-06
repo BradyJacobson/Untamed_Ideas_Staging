@@ -28,6 +28,11 @@ namespace Data.Repositories
         public IEnumerable<Images> GetRelatedMethod(string current)
         {
             var query = from e in uidb.Images where e.Idea == Convert.ToInt32(current) select e;
+            Images t;
+            foreach(Images i in query)
+            {
+                t = i;
+            }
             return query;
         }
 

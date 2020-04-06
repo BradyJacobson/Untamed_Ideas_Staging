@@ -33,6 +33,7 @@ namespace Idea_Page
             services.AddTransient<IRepository<Data.Models.Descriptions>, Data.Repositories.DescriptionsRepository>();
             services.AddTransient<IRepository<Data.Models.Images>, Data.Repositories.ImagesRepository>();
             services.AddTransient<IRepository<Data.Models.Supplies>, Data.Repositories.SuppliesRepository>();
+            services.AddTransient<IRepository<Data.Models.Picture>, Data.Repositories.PictureRepository>();
 
             services.AddCors(options =>
             {

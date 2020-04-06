@@ -35,9 +35,10 @@ namespace Idea_Page.Controllers
             return _repository.GetSpecificMethod(idea);
         }
 
-        [HttpPost]
-        public ActionResult PostImage([FromBody, Bind("Representation", "Idea")]Data.Models.Images image)
+        [HttpPost("{cost}")]
+        public ActionResult PostImage(string cost, [FromBody]Data.Models.Images image)
         {
+            image.Representation = Convert.ToInt32(cost);
             var temp0 = _repository.GetMethod();
             if (temp0.Count() > 0)
             {

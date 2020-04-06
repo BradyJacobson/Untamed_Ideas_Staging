@@ -15,7 +15,7 @@ namespace Data.Repositories
             uidb = new UntamedIdeasDbContext();
         }
 
-        public UsersRepository(Models.UntamedIdeasDbContext uidb)
+        public UsersRepository(UntamedIdeasDbContext uidb)
         {
             this.uidb = uidb ?? throw new ArgumentNullException(nameof(uidb));
         }

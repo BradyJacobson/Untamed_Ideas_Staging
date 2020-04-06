@@ -10,6 +10,7 @@ namespace Data.Models
             Descriptions = new HashSet<Descriptions>();
             Images = new HashSet<Images>();
             Supplies = new HashSet<Supplies>();
+            Picture = new HashSet<Picture>();
         }
 
         public int Id { get; set; }
@@ -21,5 +22,6 @@ namespace Data.Models
         public virtual ICollection<Descriptions> Descriptions { get; set; }
         public virtual ICollection<Images> Images { get; set; }
         public virtual ICollection<Supplies> Supplies { get; set; }
+        public virtual ICollection<Picture> Picture { get; set; }
     }
 }

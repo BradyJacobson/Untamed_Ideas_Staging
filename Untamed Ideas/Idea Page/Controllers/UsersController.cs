@@ -25,11 +25,11 @@ namespace Idea_Page.Controllers
         }
 
         //Data.Models.Users
-        [HttpGet("{username}",Name = "GetOneUser")]
-        public ActionResult GetOneUser(string username)
+        [HttpGet("{username}/{password}",Name = "GetOneUser")]
+        public ActionResult GetOneUser(string username, string password)
         {
             var certainClient = _repository.GetSpecificMethod(username);
-            if (certainClient != null)
+            if (certainClient != null && certainClient.Password == password)
                 return Ok(certainClient);
             else
                 return NotFound();
