@@ -9,6 +9,8 @@ namespace Data.Models
         public int? Representation { get; set; }
         public int? Idea { get; set; }
         public int? Paid { get; set; }
+        public string PaidTo { get; set; }
+        public int? TaskDone { get; set; }
 
         public virtual Ideas IdeaNavigation { get; set; }
     }

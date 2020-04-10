@@ -63,6 +63,8 @@ namespace Idea_Page.Controllers
             {
                 found.Idea = image.Idea;
                 found.Representation = image.Representation;
+                found.PaidTo = image.PaidTo;
+                found.TaskDone = image.TaskDone;
                 _repository.PutMethod(found);
                 return NoContent();
             }

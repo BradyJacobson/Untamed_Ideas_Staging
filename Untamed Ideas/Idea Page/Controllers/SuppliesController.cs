@@ -62,6 +62,7 @@ namespace Idea_Page.Controllers
             {
                 found.Idea = supply.Idea;
                 found.Supplies1 = supply.Supplies1;
+                found.TaskDone = supply.TaskDone;
                 _repository.PutMethod(found);
                 return NoContent();
             }

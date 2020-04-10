@@ -19,6 +19,11 @@ namespace Data.Repositories
             this.uidb = uidb ?? throw new ArgumentNullException(nameof(uidb));
         }
 
+        public IEnumerable<Images> GetFoldersMethod(string current)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Images> GetMethod()
         {
             var query = from e in uidb.Images select e;

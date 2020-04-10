@@ -36,6 +36,12 @@ namespace Idea_Page.Controllers
             return _repository.GetSpecificMethod(username);
         }
 
+        [HttpGet("folder/{baseId}")]
+        public IEnumerable<Data.Models.Ideas> GetFoldersIdeas(string baseId)
+        {
+            return _repository.GetFoldersMethod(baseId);
+        }
+
         [HttpPost]
         public ActionResult PostIdea([FromBody, Bind("Id","Ideaname","Formating","Username")]Data.Models.Ideas idea)
         {

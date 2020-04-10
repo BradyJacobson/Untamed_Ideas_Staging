@@ -1,9 +1,8 @@
 ﻿using System;
-using Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace Data
+namespace Data.Models
 {
     public partial class UntamedIdeasDbContext : DbContext
     {
@@ -60,6 +59,8 @@ namespace Data
                     .HasColumnName("ID")
                     .ValueGeneratedNever();
 
+                entity.Property(e => e.CameFrom).HasColumnName("cameFrom");
+
                 entity.Property(e => e.Ideaname)
                     .HasMaxLength(255)
                     .IsUnicode(false);
@@ -82,7 +83,14 @@ namespace Data
 
                 entity.Property(e => e.Paid).HasColumnName("paid");
 
+                entity.Property(e => e.PaidTo)
+                    .HasColumnName("paidTo")
+                    .HasMaxLength(255)
+                    .IsUnicode(false);
+
                 entity.Property(e => e.Representation).HasColumnName("representation");
+
+                entity.Property(e => e.TaskDone).HasColumnName("taskDone");
 
                 entity.HasOne(d => d.IdeaNavigation)
                     .WithMany(p => p.Images)
@@ -120,6 +128,8 @@ namespace Data
                     .HasColumnName("Supplies")
                     .HasMaxLength(255)
                     .IsUnicode(false);
+
+                entity.Property(e => e.TaskDone).HasColumnName("taskDone");
 
                 entity.HasOne(d => d.IdeaNavigation)
                     .WithMany(p => p.Supplies)

@@ -43,6 +43,13 @@ namespace Data.Repositories
                 return null;
         }
 
+        public IEnumerable<Ideas> GetFoldersMethod(string current)
+        {
+            int temp = Convert.ToInt32(current);
+            var query = from e in uidb.Ideas where e.CameFrom == temp select e; /*e.Username == current select e;*/
+            return query;
+        }
+
         public void PostMethod(Ideas current)
         {
             if (uidb.Ideas.Any(e => e.Id == current.Id) || current == null)
